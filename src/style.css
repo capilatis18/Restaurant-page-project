@@ -1,0 +1,177 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-areas: 'nav nav nav'
+                         'aside main main'
+                         'aside main main'
+                         'aside footer footer';
+    grid-template-columns: 20% auto;
+}
+#barraTexto{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: #E34134;
+    padding: 15px;
+}
+#figura{
+    position: absolute;
+    color: white;
+    justify-self: center;
+    right: 54%;
+    cursor: pointer;
+}
+#barraTexto p{
+    font-size: 15px;
+    padding: 10px;
+    color: #D8F0E7;
+    cursor: pointer;
+    
+}
+#aside{
+    grid-area: aside;
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 15px;
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-right: 1px #EBEBEB solid;
+}
+#aside p{
+    cursor: pointer;
+}
+
+#parte1{
+    display: grid;
+    grid-template-columns: 25px auto;
+    align-items: center;
+}
+#parte2{
+    display: grid;
+    grid-template-columns: 25px auto;
+    align-items: center;
+    border-top: 1px solid #EBEBEB;
+}
+#aside p{
+    padding: 8px;
+}
+
+#hoyIcon{
+    color: #643DF2;
+}
+#proximosIcon{
+    color: #4BA764;
+}
+#prioridadIcon{
+    color: #F23D3D;
+}
+#personalIcon{
+    color: #F26BCE;
+}
+#trabajoIcon{
+    color: #F2B988;
+}
+#proyectosIcon{
+    color: black;
+}
+#main{
+    display: grid;
+    grid-column: 2 / 4;
+}
+#main h1{
+    margin: 30px;
+    font-size: 30px;
+}
+.eventos{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEBEB;
+    grid-template-columns: auto 30%;
+    padding: 10px;
+    margin-left: 20px;
+}
+.tipoChequeo{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    color: #AFAFAF;
+    margin-right: 10px;
+}
+.tipoChequeo input{
+    margin-left: 10px;
+}
+#overlay{
+    display: flex;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all 600ms;
+}
+#popContainer{
+    display: flex;
+    flex-direction: column;
+    background: #E34134;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+}
+#popEncabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#close{
+    cursor: pointer;
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#inputs [type=text]{
+    text-align: center;
+    padding: 10px;
+}
+#categoria{
+    padding: 10px;
+    margin-top: 10px;
+    background: white;
+}
+#button{
+   background-color: white;
+   color: #E34134;
+   border-radius: 10px;
+   padding: 10px;
+   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+   cursor: pointer;
+}
+.overlayUnPop{
+    visibility: hidden;
+    opacity: 0;
+}
+.overlayPop{
+    visibility: visible;
+    opacity: 1;
+}
+#footer{
+    grid-area: footer;
+    justify-self: center;
+}

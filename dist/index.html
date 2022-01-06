@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="barraTexto" class="barra">
+        <span class="material-icons-outlined" id="figura">add</span>
+        <p class='p'>Agregar tarea</p>
+    </div>
+    <main id="main">
+
+    </main>
+    <aside id="aside">
+        <div id="parte1">
+            <span class="material-icons-outlined" id="hoyIcon">schedule</span>
+            <p id="hoy">Hoy</p>
+            <span class="material-icons-outlined" id="proximosIcon">update</span>       
+            <p id="p7">Proximos 7 dias</p>
+            <span class="material-icons-outlined" id="prioridadIcon">grade</span>
+            <p id="prioridad">Prioridad</p>
+        </div>
+        <div id="parte2">
+            <span class="material-icons-outlined" id="proyectosIcon">assessment</span>
+            <p id="proyectos">Proyectos</p>
+            <span class="material-icons-outlined" id="personalIcon">face</span>            
+            <p id="personal">Personal</p>
+            <span class="material-icons-outlined" id="trabajoIcon">store</span>
+            <p id="trabajo">Trabajo</p>
+        </div>
+    </aside>
+    <div id="overlay" class="overlayUnPop">
+        <div id="popContainer">
+            <div id="popEncabezado">
+            <h2>Agregar Tarea</h2>
+            <span class="material-icons-outlined" id="close">close</span>
+            </div>
+            <form action="" id="form">
+                <div id="inputs">
+                    <input type="text" id="tarea" placeholder='Tarea'required>
+                    <select name="categoria" id="categoria"required>
+                        <option value="" required class="options" disabled selected>Categoria</option>
+                        <option value="Personal" class="options">Personal</option>
+                        <option value="Trabajo" class="options">Trabajo</option>
+                    </select>
+                </div>
+                <input type="button" id="button" value="Agregar"></button>
+            </form>
+        </div>
+    </div>    
+    <footer id="footer">
+        <p>To Do List</p>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>
